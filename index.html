@@ -1,15 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-<h1>hello</h1>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
 
+    <style>
+      .mulish {
+        font-family: "Mulish", sans-serif;
+        font-optical-sizing: auto;
+      }
+      .background {
+        background-image: url("./images/bgbanner.png");
+      }
+      .new2 {
+        border-top: 1px dashed #12132d;
+      }
+    </style>
+  </head>
+  <body class="mulish">
+    <header class="mt-[55px] mb-[50px]">
+      <nav
+        class="lg:mx-[133px] flex justify-between items-center gap-5 lg:gap-0"
+      >
+        <div>
+          <h1 class="lg:text-[36px] font-extrabold text-[#12132D]">ReTro</h1>
+        </div>
+        <div class="flex lg:gap-12 items-center">
+          <div class="flex gap-3">
+            <a href=""><img src="images/Frame 2.png" alt="Home" /></a>
+            <a href=""><img src="images/Frame 3.png" alt="" /></a>
+            <a href=""><img src="images/Frame 4.png" alt="" /></a>
+            <a href=""><img src="images/Frame 5.png" alt="" /></a>
+          </div>
+          <div>
+            <button
+              class="btn bg-[#797DFC] text-[#FFFFFF] lg:p-3 lg:h-[56px] lg:w-[147px] rounded-[50px] lg:text-[20px] font-bold"
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-[#12132D] lg:mx-[133px] rounded-[32px]">
+        <div
+          class="flex flex-col lg:flex-row justify-around items-center background bg-cover bg-no-repeat bg-center h-[500px] lg:h-[550px]"
+        >
+          <div class="mt-2">
+            <h1
+              class="text-white text-[32px] mt-6 lg:mt-0 lg:text-[64px] p-8 lg:p-0 font-extrabold lg:mb-[20px]"
+            >
+              Welcome to the <br />
+              <span class="text-indigo-500">ReTro</span> Forum
+            </h1>
+            <p class="text-white mb-[32px]">
+              Share your favorite opinion and win and wp forum coffee mug!
+            </p>
+            <div>
+              <label
+                class="input input-bordered flex items-center gap-2 lg:h-[56px] lg:w-[400px]"
+              >
+                <input
+                  type="text"
+                  class="grow"
+                  placeholder="Search here anything"
+                />
+                <button class="badge badge-info btn text-white font-extrabold">
+                  Search
+                </button>
+              </label>
+            </div>
+          </div>
+          <div
+            class="bg-white w-[200px] lg:w-[371px] lg:h-[288px] mt-4 lg:mt-0 mb-16 lg:mb-0 rounded-[32px] p-4 lg:p-8"
+          >
+            <div class="flex justify-between mt-[24px] mb-[24px]">
+              <p>Registered Users</p>
+              <p>01</p>
+            </div>
+            <div class="flex justify-between mb-[24px]">
+              <p>Forum</p>
+              <p>05</p>
+            </div>
+            <div class="flex justify-between mb-[24px]">
+              <p>Topics</p>
+              <p>01</p>
+            </div>
+            <div class="flex justify-between mb-[24px]">
+              <p>Replies</p>
+              <p>01</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lg:mt-[100px] lg:mx-[133px]">
+        <div class="flex flex-col justify-center items-center lg:mb-[48px]">
+          <h1 class="text-[40px] font-extrabold">Let's Discuss</h1>
+          <p class="text-center">
+            Yes, you can run unit tests and view the results directly within the
+            app. The <br />integrated testing features allow for a streamlined .
+          </p>
+        </div>
+
+        <div class="bg-[#797DFC1A] flex gap-[24px] p-[40px]">
+          <div class="bg-white h-[72px] w-[72px] rounded-lg"><img src="" alt="" /></div>
+          <div>
+            <div class="flex gap-[20px] mb-[12px]">
+              <p>#Music</p>
+              <p>Author: Awlad Hossain</p>
+            </div>
+            <h2 class="mb-[16px]">10 Kids Unaware of Their Halloween Costume</h2>
+            <p class="mb-[19px]">
+              It’s one thing to subject yourself to ha Halloween costume mishap
+              because,<br> hey that’s your prerogative
+            </p>
+            <hr class="new2 mb-[20px]"/>
+            <div class="flex gap-6 items-center">
+                <div class="flex gap-4">
+                    <img src="images/Group 13.png" alt="">
+                    <p>560</p>
+                </div>
+                <div class="flex gap-4">
+                    <img src="images/Group 16.png" alt="">
+                    <p>1,568</p>
+                </div>
+                <div class="flex gap-4">
+                    <img src="images/Group 18.png" alt="">
+                    <p>5 min</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#f4f3f3] mt-[32px]">
+      <div
+        class="flex flex-col justify-center items-center lg:mx-[135px] lg:py-[100px]"
+      >
+        <h1 class="text-[36px] font-extrabold text-[#12132D] mb-[32px]">
+          ReTro
+        </h1>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam
+          non libero quae veniam itaque corporis cum sed incidunt doloremque
+          earum consequatur, maxime quasi fuga, debitis est nisi voluptates!
+          Odio!
+        </p>
+        <div class="flex gap-6 lg:gap-[32px] mt-[32px] mb-[mb-[32px]">
+          <a href=""><img src="images/1.png" alt="" /></a>
+          <a href=""><img src="images/2.png" alt="" /></a>
+          <a href=""><img src="images/3.png" alt="" /></a>
+          <a href=""><img src="images/4.png" alt="" /></a>
+        </div>
+        <div class="mt-[32px]">
+          <img src="images/Line 2.png" alt="" />
+        </div>
+        <p class="text-[#12132D] mt-[32px] pb-[32px]">
+          2017, All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
