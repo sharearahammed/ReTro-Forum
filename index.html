@@ -33,7 +33,7 @@
     </style>
   </head>
   <body class="mulish">
-    <header class="mt-4 lg:mt-[55px] mb-6 lg:mb-[50px]">
+    <header class="mt-8 lg:mt-[55px] mb-6 lg:mb-[50px]">
       <nav
         class="mx-5 lg:mx-[133px] flex justify-between items-center gap-5 lg:gap-0"
       >
@@ -42,10 +42,22 @@
         </div>
         <div class="flex lg:gap-12 items-center">
           <div class="flex gap-3">
-            <a href=""><img src="images/Frame 2.png" alt="Home" /></a>
-            <a href=""><img src="images/Frame 3.png" alt="" /></a>
-            <a href=""><img src="images/Frame 4.png" alt="" /></a>
-            <a href=""><img src="images/Frame 5.png" alt="" /></a>
+            <div class=" tooltip hover:tooltip-open tooltip-top" data-tip="home">
+              <img src="images/Frame 2.png" alt="" />
+            </div>
+
+            <div class=" tooltip hover:tooltip-open tooltip-top" data-tip="edit">
+              <img src="images/Frame 3.png" alt="" />
+            </div>
+
+            <div class=" tooltip hover:tooltip-open tooltip-top" data-tip="add">
+              <img src="images/Frame 4.png" alt="" />
+            </div>
+
+            <div class=" tooltip hover:tooltip-open tooltip-top" data-tip="flag">
+              <img src="images/Frame 5.png" alt="" />
+            </div>
+            
           </div>
           <div>
             <button
@@ -123,10 +135,12 @@
         </div>
 
         <div class="flex flex-col lg:flex-row justify-between">
-          <div
-            class="bg-[#797DFC1A] mb-6 lg:mb-0 flex flex-col lg:flex-row gap-[24px] p-[40px] lg:rounded-xl"
+
+
+          <div id="all-post-container"
+            class="mb-6 lg:mb-0 flex flex-col lg:flex-col gap-[24px] "
           >
-            <div class="bg-white h-[72px] w-[72px] rounded-lg">
+            <!-- <div class="bg-white h-[72px] w-[72px] rounded-lg">
               <img src="" alt="" />
             </div>
             <div>
@@ -164,9 +178,11 @@
                   <button><img src="images/Group 40106.png" alt="" /></button>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="bg-[#797DFC1A] lg:w-[374px] lg:p-[24px] rounded-lg p-5">
+
+
+          <div class="bg-[#797DFC1A] lg:w-[374px] lg:p-[24px] rounded-lg p-5 flex flex-col">
             <div class="flex justify-between items-center">
               <h2 class="font-extrabold text-[20px]">Title</h2>
               <div class="flex gap-3">
@@ -174,7 +190,8 @@
                 <p>Make as read (4)</p>
               </div>
             </div>
-            <div
+            <div id="all">
+              <!-- <div
               class="flex justify-between bg-white mt-[17px] lg:p-[15px] p-1 rounded-lg items-center"
             >
               <h3 class="text-[16px] font-bold">
@@ -185,6 +202,7 @@
                 <img src="images/Group 16.png" alt="" />
                 <p>1,568</p>
               </div>
+            </div> -->
             </div>
           </div>
         </div>
@@ -224,14 +242,14 @@
             app. The <br />integrated testing features allow for a streamlined .
           </p>
         </div>
-        <div class="border-2 border-[#f4f3f3] rounded-xl lg:w-[374px] p-[24px]">
-          <div class="mb-[24px]">
+        <div id="latest" class="flex flex-col lg:flex-row justify-evenly">
+          <!-- <div class="mb-[24px]">
             <img
               class="bg-[#f4f3f3] lg:h-[190px] lg:w-[326px] rounded-lg"
               src=""
               alt=""
-            />
-          </div>
+            /> -->
+          <!-- </div>
           <div class="flex gap-2 items-center mb-[12px]">
             <img src="images/Frame 0.png" alt="" />
             <p>29 Jan 2024</p>
@@ -252,7 +270,7 @@
               <h4 class="text-[16px] font-extrabold">Cameron Williamson</h4>
               <p>Unknown</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
