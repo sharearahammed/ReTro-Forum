@@ -89,12 +89,12 @@
               <label
                 class="input input-bordered flex items-center gap-2 lg:h-[56px] lg:w-[400px]"
               >
-                <input
+                <input id="search-field"
                   type="text"
                   class="grow"
                   placeholder="Search here anything"
                 />
-                <button class="badge badge-info btn text-white font-extrabold">
+                <button onclick="searchButton()" class="badge badge-info btn text-white font-extrabold">
                   Search
                 </button>
               </label>
@@ -132,6 +132,11 @@
             Yes, you can run unit tests and view the results directly within the
             app. The <br />integrated testing features allow for a streamlined .
           </p>
+        </div>
+
+        <!-- spinner --> 
+        <div id="loading" class="text-center my-40 hidden">
+          <span class="loading loading-dots loading-lg"></span>
         </div>
 
         <div class="flex flex-col lg:flex-row justify-between">
@@ -180,14 +185,17 @@
               </div>
             </div> -->
           </div>
+          <div id="search-container" class="mb-6 lg:mb-0 flex flex-col lg:flex-col gap-[24px] ">
+
+          </div>
 
 
-          <div class="bg-[#797DFC1A] lg:w-[374px] lg:p-[24px] rounded-lg p-5 flex flex-col">
+          <div class=" lg:w-[374px] lg:p-[24px] rounded-lg p-5 flex flex-col">
             <div class="flex justify-between items-center">
               <h2 class="font-extrabold text-[20px]">Title</h2>
               <div class="flex gap-3">
                 <img src="images/Frame.png" alt="" />
-                <p>Make as read (4)</p>
+                <p>Make as read (<span id="makeReadCount">0</span>)</p>
               </div>
             </div>
             <div id="all">
