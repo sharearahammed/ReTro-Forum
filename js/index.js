@@ -14,13 +14,8 @@ const Allfetchdata = async () => {
   const allposts = data.posts;
   let stringfyss = JSON.stringify(allposts).replace(/'/g, " ");
   let parsing = JSON.parse(stringfyss)
-console.log(parsing);
   
-
   displayAllPosts(parsing);
-  console.log(allposts);
-  data.stringfy
-
   // console.log(allposts);
 };
 
@@ -84,9 +79,9 @@ const displayAllPosts = (allposts) => {
 };
 
 const buttonClick = async (title, count) => {
-  console.log(readCount);
+  // console.log(readCount);
   readCount++;
-  console.log(readCount);
+  // console.log(readCount);
   document.getElementById("makeReadCount").innerText = readCount;
 
   titleShow(title, count);
@@ -183,7 +178,11 @@ const searchdatafetch = async (searchText) => {
   const res = await fetch(url);
   const data = await res.json();
   const posts = data.posts;
-  displaySearchData(posts);
+
+  let stringfyss = JSON.stringify(posts).replace(/'/g, " ");
+  let parsing = JSON.parse(stringfyss)
+
+  displaySearchData(parsing);
 };
 
 const displaySearchData = (posts) => {
@@ -192,7 +191,7 @@ const displaySearchData = (posts) => {
 
   setTimeout(() => {
     posts.forEach((post) => {
-      console.log(post);
+      // console.log(post);
 
       const searchdiv = document.createElement("div");
       searchdiv.classList =
@@ -259,7 +258,7 @@ const searchButton = () => {
   loading(true);
   const searchField = document.getElementById("search-field");
   const searchText = searchField.value;
-  console.log(searchText);
+  // console.log(searchText);
   searchdatafetch(searchText);
 };
 
@@ -276,5 +275,3 @@ latestPost();
 Allfetchdata();
 searchdatafetch();
 
-const res = "A Beginner's Guide".replace("'", " ");
-console.log(res); // Output: "A Beginner's Guide"
