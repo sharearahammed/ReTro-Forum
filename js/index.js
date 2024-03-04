@@ -86,7 +86,7 @@ const titleShow = (title,count) => {
   // console.log("clicked", post);
 
   const newDiv = document.createElement("div");
-  newDiv.classList = "border-2 border-black bg-white mt-[17px] lg:p-[15px] rounded-lg w-[360px]";
+  newDiv.classList = "border-2 border-black bg-white mt-[17px] lg:p-[15px] rounded-lg w-[370px]";
   newDiv.innerHTML = `
         <div
         class="flex justify-between items-center w-full"
